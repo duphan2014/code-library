@@ -18,10 +18,10 @@ const Example_count_by_1 = ()=>{
 }
 
 //Find number of occurences of unique items (groups) in the array
-function countBy(items, groupName){
+function countBy(items, func){
     let counts =[];
     for (let item of items) {
-        let name = groupName(item); //name will be false, false, true, true, true for each iteration
+        let name = func(item); //name will be false, false, true, true, true for each iteration
         let known = counts.find(c => c.name == name); //known 1st run is undefined because counts is empty
         if(!known){ //for 1st run when known is undefined
             counts.push({name, count: 1});
@@ -32,20 +32,8 @@ function countBy(items, groupName){
     return counts;
 }
 
-function countGroup(items, func){
-    let counts = [];
-    for(let i of items){
-        let groupName = func(i);
-        let known = counts.find(c => c.groupName == groupName);
-        if(!known){
-            counts.push({groupName, count: 1});
-        }else{
-            known.count++;
-        }
-    }
-    return counts;
-}
 
 console.log("group name and count:", countBy([1, 2, 3, 4, 5], n => n > 2));
+//output: [{name: false, count: 2},{name: true, count: 1}]
 
 export default Example_count_by_1;
