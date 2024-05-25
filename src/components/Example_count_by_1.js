@@ -7,6 +7,7 @@ const Example_count_by_1 = ()=>{
 
 	useEffect(()=>{
       	setScripts(unicodeScripts);
+        console.log("group name and count:", countBy([1, 2, 3, 4, 5], n => n > 2));
 	},[]);
 
   return (
@@ -16,5 +17,21 @@ const Example_count_by_1 = ()=>{
     </div>
   );
 }
+
+function countBy(items, groupName){
+    let counts =[];
+    for (let item of items) {
+        let a = groupName(item);
+        let known = counts.find(c => c.a == a);
+        if(!known){
+            counts.push({a, count: 1});
+        }else{
+            known.count++;
+        }
+    }
+    return counts;
+}
+
+
 
 export default Example_count_by_1;
