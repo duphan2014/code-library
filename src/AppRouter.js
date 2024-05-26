@@ -9,6 +9,7 @@ const AppRouter = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
+        {/* <Route path="/Higher_order_function_example_2" element={<div>quan que</div>}/>*/}
         <Route path="/Higher_order_function_example_2" element={<Higher_order_function_example_2/>}/>
         <Route path="/Higher_order_function_example_3" element={<Higher_order_function_example_3/>}/>
       </Routes>

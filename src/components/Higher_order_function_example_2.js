@@ -10,13 +10,15 @@ import {scripts} from "../data/scripts.js";
 const Higher_order_function_example_2 = ()=>{
 	const [unicodeScripts, setScripts] = useState([]);
 
+    // useEffect is called after every render
+    
 	useEffect(()=>{
       	//setScripts(unicodeScripts);
         //don't use console.log because useEffect acts like console.log already
         //console.log(filter(scripts, script => script.living));
         console.log('a');
 	},[]);
-
+    
   return (
     <div>
       <h2>Higher_order_function_example_2</h2>
