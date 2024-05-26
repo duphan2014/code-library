@@ -11,6 +11,9 @@ const Home = ()=>{
     
   return (
     <div>
+        <div>
+            <span>header</span>
+        </div>
         <h2>Table of content</h2>
         <li><Link to={`/Higher_order_function_example_2`}>Example: Higher_order_function_example_2</Link></li>
         <li><Link to={`/Higher_order_function_example_3`}>Example: Higher_order_function_example_3</Link></li>
