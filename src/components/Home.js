@@ -12,7 +12,7 @@ const Home = ()=>{
   return (
     <div>
       <h2>Table of content</h2>
-        <li><Link to={`/Example_count_by_1`}>Example: countBy function - example 1</Link></li>
+        <li><Link to={`/Higher_order_function_example_3`}>Example: countBy function - example 1</Link></li>
     </div>
   );
 }
