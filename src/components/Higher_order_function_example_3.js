@@ -7,7 +7,7 @@
 import React, {useState, useEffect} from "react";
 import {scripts} from "../data/scripts.js";
 
-const Example_count_by_1 = ()=>{
+const Higher_order_function_example_3 = ()=>{
 	const [unicodeScripts, setScripts] = useState([]);
 
 	useEffect(()=>{
@@ -69,4 +69,4 @@ function textScripts(text){
 
 console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"'));
 
-export default Example_count_by_1;
+export default Higher_order_function_example_3;
