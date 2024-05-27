@@ -17,6 +17,7 @@ const Home = ()=>{
         <h2>Table of content</h2>
         <li><Link to={`/Higher_order_function_example_2`}>Example: Higher_order_function_example_2</Link></li>
         <li><Link to={`/Higher_order_function_example_3`}>Example: Higher_order_function_example_3</Link></li>
+        <li><Link to={`/Server_Side_Tracking_Example_1`}>Example: Server_Side_Tracking_Example_1</Link></li>
         <li>Placeholder 1</li>
         <div>
             <span>Footer</span>
